@@ -23,19 +23,23 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #E7D4B6; }
-
-.nav__logo {
-  margin-left: 10rem;
-  padding: 0.5rem; }
+  nav .nav__logo {
+    margin-left: 10rem;
+    padding: 0.5rem; }
 
 .menu {
   display: flex;
   align-items: center;
   gap: 3rem;
-  padding: 1.3rem; }
-
-.menu__link {
-  color: #000000;
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 2em;
+  margin-top: 1rem;
   padding: 1.5rem; }
+  .menu__link {
+    color: #000000;
+    font-family: "Cinzel", serif;
+    font-size: 2em;
+    font-weight: 400;
+    padding: 1.5rem; }
+    .menu__link:hover {
+      color: #606e77; }
+    .menu__link span {
+      font-family: "Cinzel Decorative", cursive; }
