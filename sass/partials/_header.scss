@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E7D4B6;
+}
+
+.nav__logo {
+    margin-left: 10rem;
+    padding: 0.5rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.3rem;
+}
+
+.menu__link {
+    color: #000000;
+    font-family: $font-primary;
+    font-size: 2em;
+    padding: 1.5rem;
+}
+
