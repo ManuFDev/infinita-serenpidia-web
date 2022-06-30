@@ -15,13 +15,23 @@ html {
 }
 
 body {
-    font-family: $font-secondary
+    font-family: $font-secondary;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: 1 1 100%;
+    object-fit: cover;
 }

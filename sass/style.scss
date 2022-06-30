@@ -2,12 +2,18 @@
 
 @import './misc/variables';
 
+// icons
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+
 // globales
 
 @import './misc/normalize.scss';
 
 // partials
 
-@import './partials/header'
+@import './partials/header';
+@import './partials/footer';
 
 //views
+
+@import './views/contacto';
