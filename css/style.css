@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Lora-Regular";
+  src: url(../../public/fonts/Lora-Regular.ttf); }
+
+@font-face {
+  font-family: 'Lora-Italic';
+  src: url(../../public/fonts/Lora-Italic.ttf); }
+
+@font-face {
+  font-family: 'Cinzel-Medium';
+  src: url(../../public/fonts/Cinzel-Medium.ttf); }
+
 /* normalize */
 *,
 *::after,
@@ -11,35 +23,175 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lora", serif; }
+  background-color: #EBEDE7; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 a {
   text-decoration: none; }
 
-nav {
+header {
   display: flex;
-  justify-content: space-between;
-  background-color: #E7D4B6; }
-  nav .nav__logo {
-    margin-left: 10rem;
-    padding: 0.5rem; }
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0 0; }
+  header .logo {
+    margin-left: 10rem; }
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem; }
+
+.line span {
+  border: 0.979267px solid #E7D4B6;
+  width: 40vw; }
+
+.navbar {
+  flex-basis: 80%;
+  padding: 0 5rem;
+  margin-left: 5rem; }
 
 .menu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
-  margin-top: 1rem;
-  padding: 1.5rem; }
-  .menu__link {
-    color: #000000;
-    font-family: "Cinzel", serif;
-    font-size: 2em;
-    font-weight: 400;
-    padding: 1.5rem; }
-    .menu__link:hover {
-      color: #606e77; }
-    .menu__link span {
-      font-family: "Cinzel Decorative", cursive; }
+  gap: 100px; }
+  .menu-item {
+    font-family: "Lora-Regular";
+    font-size: 1.7em; }
+  .menu-link {
+    color: #778690; }
+
+video {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  object-fit: cover; }
+
+.logo-ingresar {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; }
+
+.titulo-ingresar, .titulo-ingresar__dos, .boton-ingresar {
+  color: #fff;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  font-family: "Lora-Italic"; }
+  .titulo-ingresar__dos {
+    top: 70%; }
+
+.boton-ingresar {
+  top: 85%;
+  left: 50%;
+  border: none;
+  border-radius: 8.064px;
+  font-family: "Cinzel-Medium";
+  font-size: 2em;
+  padding: 1.5rem 0;
+  background-color: #b1b9c6; }
+  .boton-ingresar a {
+    color: #ffff;
+    padding: 15rem; }
+
+@media screen and (max-width: 480px) {
+  .logo-ingresar {
+    width: 80vw; }
+  .titulo-ingresar, .titulo-ingresar__dos, .boton-ingresar {
+    font-size: 1.7em;
+    text-align: center; }
+    .titulo-ingresar__dos {
+      top: 74%; }
+  .boton-ingresar a {
+    padding: 8rem; } }
+
+.sobre-mi {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem; }
+  .sobre-mi .info {
+    display: flex;
+    flex-direction: column;
+    width: 30%; }
+    .sobre-mi .info-title, .sobre-mi .info .info-p {
+      font-size: 2.4em;
+      font-family: "Lora-Regular";
+      font-weight: normal;
+      color: #4A4A4A;
+      line-height: 31px;
+      letter-spacing: 0.01em; }
+    .sobre-mi .info .info-p {
+      margin-top: 3rem; }
+    .sobre-mi .info .info-button {
+      background-color: #778690;
+      border: none;
+      border-radius: 12px;
+      align-self: center;
+      margin-top: 5rem;
+      padding: 2rem 0; }
+      .sobre-mi .info .info-button a {
+        padding: 2rem;
+        color: #fff;
+        font-family: "Cinzel-Medium";
+        font-size: 1.5em;
+        line-height: 22px; }
+
+.index-title {
+  font-size: 3.6em;
+  font-family: "Cinzel-Medium";
+  font-style: normal;
+  font-weight: 400;
+  color: #778690;
+  text-align: center;
+  line-height: 49px;
+  letter-spacing: 0.01em;
+  margin-top: 3rem; }
+
+.articles-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .articles-container article {
+    margin-top: 5rem; }
+    .articles-container article div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .articles-container article div p {
+        margin-top: 3rem;
+        font-size: 1.5em;
+        width: 300px;
+        height: 152px;
+        color: #4A4A4A;
+        font-family: "Lora-Regular";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.01em; }
+      .articles-container article div .article-button {
+        background-color: #778690;
+        border: none;
+        border-radius: 12px;
+        align-self: center;
+        margin-top: 2rem;
+        padding: 2rem 0; }
+        .articles-container article div .article-button a {
+          padding: 10rem;
+          color: #fff;
+          font-family: "Cinzel-Medium";
+          font-size: 1.5em;
+          line-height: 22px; }

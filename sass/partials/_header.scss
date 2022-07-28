@@ -1,34 +1,40 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: #E7D4B6;
+header {
+    @include flex(null, center, center);
+    padding: 2rem 0 0 0;
 
-    & .nav__logo {
+    .logo {
         margin-left: 10rem;
-        padding: 0.5rem;
     }
 }
 
-.menu {
+.line {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 1rem;
-    padding: 1.5rem;
-    &__link {
-        color: #000000;
-        font-family: $font-principal;
-        font-size: 2em;
-        font-weight: 400;
-        padding: 1.5rem; 
-        &:hover {
-            color: #606e77;
-        }
-        & span {
-            font-family: $font-primary;
-        }
-        }
+    gap: 1rem;
+    margin-top: 3rem;
+}
+    .line span {
+        border: 0.979267px solid #E7D4B6;
+        width: 40vw;
     }
 
+.navbar {
+    flex-basis: 80%;
+    padding: 0 5rem;
+    margin-left: 5rem;
+}
 
+.menu {
+    @include flex(null, space-between, center);
+    gap: 100px;
 
+    &-item {
+        font-family: $font-principal;
+        font-size: 1.7em;
+    }
+
+    &-link {
+        color: map-get($colors, font-color-primary);
+    }
+}

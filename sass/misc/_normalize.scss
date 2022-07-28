@@ -1,5 +1,4 @@
 /* normalize */
-
 *,
 *::after,
 *::before {
@@ -9,17 +8,23 @@
 }
 
 /* globals */
-
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: $font-secondary
+    background-color: map-get($colors, bg-color);
+
 }
+
+// body {
+//     font-family: $font-secondary;
+// }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {

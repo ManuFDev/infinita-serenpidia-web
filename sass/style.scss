@@ -1,13 +1,19 @@
-// variables
+//fpnts
+@import './misc/fonts';
 
+// variables
 @import './misc/variables';
 
-// globales
+//mixins
+@import './misc/mixins';
 
+// globals
 @import './misc/normalize.scss';
 
 // partials
-
-@import './partials/header'
+@import './partials/header';
+@import './partials/footer';
 
 //views
+@import './views/intro';
+@import './views/index';
