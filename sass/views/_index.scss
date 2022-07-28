@@ -1,0 +1,95 @@
+.sobre-mi {
+    @include flex(null, space-evenly, center);
+    margin-top: 5rem;
+
+    .info {
+        @include flex(column, null, null);
+        width: 30%;
+
+        &-title {
+            font-size: 2.4em;
+            font-family: $font-principal;
+            font-weight: normal;
+            color: map-get($colors, text-color-primary);
+            line-height: 31px;
+            letter-spacing: 0.01em;
+        }
+
+        .info-p {
+            @extend .info-title;
+            margin-top: 3rem;
+        }
+
+        .info-button {
+            background-color: map-get($colors, font-color-primary);
+            border: none;
+            border-radius: 12px;
+            align-self: center;
+            margin-top: 5rem;
+            padding: 2rem 0;
+
+            & a {
+                padding: 2rem;
+                color: #fff;
+                font-family: $font-secondary;
+                font-size: 1.5em;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.index-title {
+    font-size: 3.6em;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: 400;
+    color: map-get($colors, font-color-primary);
+    text-align: center;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    margin-top: 3rem;
+}
+
+.articles-container {
+    @include flex(null, space-evenly, center);
+
+    & article {
+        margin-top: 5rem;
+
+        & div {
+            @include flex(column, center, center);
+            text-align: center;
+
+            & p {
+                margin-top: 3rem;
+                font-size: 1.5em;
+                width: 300px;
+                height: 152px;
+                color: map-get($colors, text-color-primary);
+                font-family: $font-principal;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0.01em;
+            }
+
+            & .article-button {
+                background-color: map-get($colors, font-color-primary);
+                border: none;
+                border-radius: 12px;
+                align-self: center;
+                margin-top: 2rem;
+                padding: 2rem 0;
+                
+                & a {
+                    padding: 10rem;
+                    color: #fff;
+                    font-family: $font-secondary;
+                    font-size: 1.5em;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+video {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    object-fit: cover;
+}
+
+.logo-ingresar {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.titulo-ingresar {
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    font-family: $font-primary;
+    
+    &__dos {
+    @extend .titulo-ingresar;
+    top: 70%
+    }
+}
+
+.boton-ingresar {
+    @extend .titulo-ingresar;
+    top: 85%;
+    left: 50%;
+    border: none;
+    border-radius: 8.064px;
+    font-family: $font-secondary;
+    font-size: 2em;
+    padding: 1.5rem 0;
+    background-color: map-get($colors , bg-color-primary );
+    & a {
+        color: #ffff;
+        padding: 15rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo-ingresar {
+        width: 80vw;
+    }
+    .titulo-ingresar{
+        font-size: 1.7em;
+        text-align: center;
+        &__dos {
+            top: 74%;
+        }
+    }
+    .boton-ingresar a{
+        padding: 8rem;
+    }
+}
+
