@@ -69,9 +69,9 @@ header {
     color: #778690; }
 
 video {
+  display: flex;
   width: 100%;
   height: 100vh;
-  display: flex;
   object-fit: cover; }
 
 .logo-ingresar {
@@ -103,7 +103,7 @@ video {
   background-color: #b1b9c6; }
   .boton-ingresar a {
     color: #ffff;
-    padding: 15rem; }
+    padding: 0 15rem; }
 
 @media screen and (max-width: 480px) {
   .logo-ingresar {
