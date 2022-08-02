@@ -10,6 +10,11 @@
   font-family: 'Cinzel-Medium';
   src: url(../../public/fonts/Cinzel-Medium.ttf); }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 2rem; }
+
 /* normalize */
 *,
 *::after,
@@ -68,6 +73,34 @@ header {
   .menu-link {
     color: #778690; }
 
+.info-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 5rem;
+  padding: 2rem 0; }
+  .info-button a {
+    padding: 2rem;
+    color: #fff;
+    font-family: "Cinzel-Medium";
+    font-size: 1.5em;
+    line-height: 22px; }
+
+.article-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 2rem;
+  padding: 2rem 0; }
+  .article-button a {
+    padding: 2rem;
+    color: #fff;
+    font-family: "Cinzel-Medium";
+    font-size: 1.5em;
+    line-height: 22px; }
+
 video {
   display: flex;
   width: 100%;
@@ -96,7 +129,7 @@ video {
   top: 85%;
   left: 50%;
   border: none;
-  border-radius: 8.064px;
+  border-radius: 120px;
   font-family: "Cinzel-Medium";
   font-size: 2em;
   padding: 1.5rem 0;
@@ -134,21 +167,8 @@ video {
       letter-spacing: 0.01em; }
     .sobre-mi .info .info-p {
       margin-top: 3rem; }
-    .sobre-mi .info .info-button {
-      background-color: #778690;
-      border: none;
-      border-radius: 12px;
-      align-self: center;
-      margin-top: 5rem;
-      padding: 2rem 0; }
-      .sobre-mi .info .info-button a {
-        padding: 2rem;
-        color: #fff;
-        font-family: "Cinzel-Medium";
-        font-size: 1.5em;
-        line-height: 22px; }
 
-.index-title {
+.home-title, .guia-lunar__title, .guia-ayurveda__title, .astrologias-title {
   font-size: 3.6em;
   font-family: "Cinzel-Medium";
   font-style: normal;
@@ -182,16 +202,39 @@ video {
         font-weight: 400;
         line-height: 19px;
         letter-spacing: 0.01em; }
-      .articles-container article div .article-button {
-        background-color: #778690;
-        border: none;
-        border-radius: 12px;
-        align-self: center;
-        margin-top: 2rem;
-        padding: 2rem 0; }
-        .articles-container article div .article-button a {
-          padding: 10rem;
-          color: #fff;
-          font-family: "Cinzel-Medium";
-          font-size: 1.5em;
-          line-height: 22px; }
+
+.guia-lunar, .guia-ayurveda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem; }
+  .guia-lunar__content, .guia-ayurveda__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15rem; }
+  .guia-lunar__description, .astrologias-description, .guia-ayurveda__description {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+    font-size: 1.5em;
+    color: #4A4A4A;
+    font-family: "Lora-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 1%; }
+
+.guia-ayurveda {
+  margin-top: 5rem; }
+
+.astrologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .astrologias-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem; }
