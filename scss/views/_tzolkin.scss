@@ -1,16 +1,11 @@
 .tzolkin {
-    @include flex(column, center, center);
+    @include flex(row, center, center);
     margin-top: 5rem;
     &-content {
         @include flex(column, null, center);
-        padding: 0 5rem;
     }
     &-title {
         @extend .home-title;
-        margin-top: 10rem;
-    }
-    &-description {
-        @extend .guia-lunar__description;
-        padding: 0 10rem;
+        margin-top: 5rem;
     }
 }

@@ -1,8 +1,6 @@
 .sesiones {
-
     &-content {
         @include flex(column, null, center);
-
     }
 
     &-title {
@@ -21,12 +19,12 @@
 
     &__content {
         @include flex(column, null, center);
-       
+
     }
 
     &__title {
         @extend .home-title;
-        padding: 0 15rem;
+        width: 100%
     }
 
     &__description {

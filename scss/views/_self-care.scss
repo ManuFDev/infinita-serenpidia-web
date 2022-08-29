@@ -4,11 +4,11 @@
 
     &__content {
         @include flex(column, null, center);
-        padding: 0 15rem;
     }
 
     &__title {
         @extend .home-title;
+        width: 100%;
     }
 
     &__description {
@@ -29,4 +29,8 @@
 
 .guia-ayurveda {
     margin-top: 5rem;
+}
+
+.menu-link__modifier {
+    color: #000;
 }

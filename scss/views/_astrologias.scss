@@ -6,8 +6,11 @@
     }
     &-title {
         @extend .home-title;
+        width: 100%;
     }
     &-description {
-        @extend .guia-lunar__description;
+        @extend .description;
+        margin: 5rem 0 5rem 0;
+        padding: 0;
     }
 }

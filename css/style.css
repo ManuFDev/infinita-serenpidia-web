@@ -64,7 +64,7 @@ header .logo {
 
 .line span {
   border: 0.979267px solid #E7D4B6;
-  width: 40vw;
+  width: 43%;
 }
 
 .navbar {
@@ -117,6 +117,17 @@ header .logo {
   font-family: "Cinzel-Medium";
   font-size: 1.5em;
   line-height: 22px;
+}
+
+.description, .astrologias-description {
+  margin: 5rem 0;
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  padding: 0 5rem;
 }
 
 video {
@@ -177,6 +188,38 @@ video {
     padding: 8rem;
   }
 }
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-p {
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 1000px;
+  margin: 5rem 0 3rem 0;
+}
+
+.home-title, .informes-title, .diseno-impulso__title, .sesiones-title, .tzolkin-title, .d-humano__title, .astrologias-title, .guia-lunar__title, .guia-ayurveda__title {
+  font-size: 3.6em;
+  font-family: "Cinzel-Medium";
+  font-style: normal;
+  font-weight: 400;
+  color: #778690;
+  text-align: center;
+  line-height: 49px;
+  letter-spacing: 0.01em;
+  margin-top: 3rem;
+  width: 450px;
+}
+
 .sobre-mi {
   display: flex;
   justify-content: space-evenly;
@@ -200,46 +243,6 @@ video {
   margin-top: 3rem;
 }
 
-.home-title, .informes-title, .diseno-impulso__title, .sesiones-title, .tzolkin-title, .d-humano__title, .astrologias-title, .guia-lunar__title, .guia-ayurveda__title {
-  font-size: 3.6em;
-  font-family: "Cinzel-Medium";
-  font-style: normal;
-  font-weight: 400;
-  color: #778690;
-  text-align: center;
-  line-height: 49px;
-  letter-spacing: 0.01em;
-  margin-top: 3rem;
-}
-
-.articles-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.articles-container article {
-  margin-top: 5rem;
-}
-.articles-container article div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.articles-container article div p {
-  margin-top: 3rem;
-  font-size: 1.5em;
-  width: 300px;
-  height: 152px;
-  color: #4A4A4A;
-  font-family: "Lora-Regular";
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0.01em;
-}
-
 .guia-lunar, .guia-ayurveda {
   display: flex;
   flex-direction: row;
@@ -250,9 +253,11 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15rem;
 }
-.guia-lunar__description, .informes-description, .diseno-impulso__description, .sesiones-description, .tzolkin-description, .d-humano__description, .astrologias-description, .guia-ayurveda__description {
+.guia-lunar__title, .guia-ayurveda__title {
+  width: 100%;
+}
+.guia-lunar__description, .informes-description, .diseno-impulso__description, .sesiones-description, .d-humano__description, .guia-ayurveda__description {
   margin-top: 3rem;
   margin-bottom: 2rem;
   padding: 0 5rem;
@@ -269,6 +274,10 @@ video {
   margin-top: 5rem;
 }
 
+.menu-link__modifier {
+  color: #000;
+}
+
 .astrologias {
   display: flex;
   flex-direction: row;
@@ -281,6 +290,14 @@ video {
   align-items: center;
   padding: 0 5rem;
 }
+.astrologias-title {
+  width: 100%;
+}
+.astrologias-description {
+  margin: 5rem 0 5rem 0;
+  padding: 0;
+}
+
 .d-humano {
   display: flex;
   flex-direction: row;
@@ -293,9 +310,12 @@ video {
   align-items: center;
   padding: 0 5rem;
 }
+.d-humano__title {
+  width: 100%;
+}
 .tzolkin {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -304,13 +324,9 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5rem;
 }
 .tzolkin-title {
-  margin-top: 10rem;
-}
-.tzolkin-description {
-  padding: 0 10rem;
+  margin-top: 5rem;
 }
 
 .sesiones-content {
@@ -335,7 +351,7 @@ video {
   align-items: center;
 }
 .diseno-impulso__title {
-  padding: 0 15rem;
+  width: 100%;
 }
 .diseno-impulso__description {
   padding: 0 10rem;
