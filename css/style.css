@@ -1,14 +1,20 @@
 @font-face {
   font-family: "Lora-Regular";
-  src: url(../../public/fonts/Lora-Regular.ttf); }
-
+  src: url(../../public/fonts/Lora-Regular.ttf);
+}
 @font-face {
-  font-family: 'Lora-Italic';
-  src: url(../../public/fonts/Lora-Italic.ttf); }
-
+  font-family: "Lora-Italic";
+  src: url(../../public/fonts/Lora-Italic.ttf);
+}
 @font-face {
-  font-family: 'Cinzel-Medium';
-  src: url(../../public/fonts/Cinzel-Medium.ttf); }
+  font-family: "Cinzel-Medium";
+  src: url(../../public/fonts/Cinzel-Medium.ttf);
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
 
 /* normalize */
 *,
@@ -16,57 +22,113 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* globals */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
-  background-color: #EBEDE7; }
+  background-color: #EBEDE7;
+}
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 0 0; }
-  header .logo {
-    margin-left: 10rem; }
+  padding: 2rem 0 0 0;
+}
+header .logo {
+  margin-left: 10rem;
+}
 
 .line {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+}
 
 .line span {
   border: 0.979267px solid #E7D4B6;
-  width: 40vw; }
+  width: 43%;
+}
 
 .navbar {
   flex-basis: 80%;
   padding: 0 5rem;
-  margin-left: 5rem; }
+  margin-left: 5rem;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px; }
-  .menu-item {
-    font-family: "Lora-Regular";
-    font-size: 1.7em; }
-  .menu-link {
-    color: #778690; }
+  gap: 100px;
+}
+.menu-item {
+  font-family: "Lora-Regular";
+  font-size: 1.7em;
+}
+.menu-link {
+  color: #778690;
+}
+
+.info-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+}
+.info-button a {
+  padding: 2rem 5rem;
+  color: #fff;
+  font-family: "Cinzel-Medium";
+  font-size: 1.5em;
+  line-height: 22px;
+}
+
+.article-button {
+  background-color: #778690;
+  border: none;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+.article-button a {
+  padding: 2rem 5rem;
+  color: #fff;
+  font-family: "Cinzel-Medium";
+  font-size: 1.5em;
+  line-height: 22px;
+}
+
+.description, .astrologias-description {
+  margin: 5rem 0;
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  padding: 0 5rem;
+}
 
 video {
   display: flex;
@@ -74,29 +136,33 @@ video {
   height: 100vh;
   object-fit: cover; }
 
+
 .logo-ingresar {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px; }
+  width: 500px;
+}
 
-.titulo-ingresar, .titulo-ingresar__dos, .boton-ingresar {
+.titulo-ingresar, .boton-ingresar, .titulo-ingresar__dos {
   color: #fff;
   position: absolute;
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5em;
-  font-family: "Lora-Italic"; }
-  .titulo-ingresar__dos {
-    top: 70%; }
+  font-family: "Lora-Italic";
+}
+.titulo-ingresar__dos {
+  top: 70%;
+}
 
 .boton-ingresar {
   top: 85%;
   left: 50%;
   border: none;
-  border-radius: 8.064px;
+  border-radius: 120px;
   font-family: "Cinzel-Medium";
   font-size: 2em;
   padding: 1.5rem 0;
@@ -105,50 +171,47 @@ video {
     color: #ffff;
     padding: 0 15rem; }
 
+.boton-ingresar a {
+  color: white;
+  padding: 0 15rem;
+}
+
+
 @media screen and (max-width: 480px) {
   .logo-ingresar {
-    width: 80vw; }
+    width: 80vw;
+  }
   .titulo-ingresar, .titulo-ingresar__dos, .boton-ingresar {
     font-size: 1.7em;
-    text-align: center; }
-    .titulo-ingresar__dos {
-      top: 74%; }
+    text-align: center;
+  }
+  .titulo-ingresar__dos {
+    top: 74%;
+  }
   .boton-ingresar a {
-    padding: 8rem; } }
-
-.sobre-mi {
+    padding: 8rem;
+  }
+}
+.title-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  margin-top: 5rem; }
-  .sobre-mi .info {
-    display: flex;
-    flex-direction: column;
-    width: 30%; }
-    .sobre-mi .info-title, .sobre-mi .info .info-p {
-      font-size: 2.4em;
-      font-family: "Lora-Regular";
-      font-weight: normal;
-      color: #4A4A4A;
-      line-height: 31px;
-      letter-spacing: 0.01em; }
-    .sobre-mi .info .info-p {
-      margin-top: 3rem; }
-    .sobre-mi .info .info-button {
-      background-color: #778690;
-      border: none;
-      border-radius: 12px;
-      align-self: center;
-      margin-top: 5rem;
-      padding: 2rem 0; }
-      .sobre-mi .info .info-button a {
-        padding: 2rem;
-        color: #fff;
-        font-family: "Cinzel-Medium";
-        font-size: 1.5em;
-        line-height: 22px; }
+  justify-content: center;
+}
 
-.index-title {
+.home-p {
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 1000px;
+  margin: 5rem 0 3rem 0;
+}
+
+.home-title, .informes-title, .diseno-impulso__title, .sesiones-title, .tzolkin-title, .d-humano__title, .astrologias-title, .guia-lunar__title, .guia-ayurveda__title {
   font-size: 3.6em;
   font-family: "Cinzel-Medium";
   font-style: normal;
@@ -157,41 +220,175 @@ video {
   text-align: center;
   line-height: 49px;
   letter-spacing: 0.01em;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  width: 450px;
+}
 
-.articles-container {
+.sobre-mi {
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
-  .articles-container article {
-    margin-top: 5rem; }
-    .articles-container article div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
-      .articles-container article div p {
-        margin-top: 3rem;
-        font-size: 1.5em;
-        width: 300px;
-        height: 152px;
-        color: #4A4A4A;
-        font-family: "Lora-Regular";
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0.01em; }
-      .articles-container article div .article-button {
-        background-color: #778690;
-        border: none;
-        border-radius: 12px;
-        align-self: center;
-        margin-top: 2rem;
-        padding: 2rem 0; }
-        .articles-container article div .article-button a {
-          padding: 10rem;
-          color: #fff;
-          font-family: "Cinzel-Medium";
-          font-size: 1.5em;
-          line-height: 22px; }
+  align-items: center;
+  margin-top: 5rem;
+}
+.sobre-mi .info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.sobre-mi .info-title, .sobre-mi .info .info-p {
+  font-size: 2.4em;
+  font-family: "Lora-Regular";
+  font-weight: normal;
+  color: #4A4A4A;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+}
+.sobre-mi .info .info-p {
+  margin-top: 3rem;
+}
+
+.guia-lunar, .guia-ayurveda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.guia-lunar__content, .guia-ayurveda__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guia-lunar__title, .guia-ayurveda__title {
+  width: 100%;
+}
+.guia-lunar__description, .informes-description, .diseno-impulso__description, .sesiones-description, .d-humano__description, .guia-ayurveda__description {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 5rem;
+  font-size: 1.5em;
+  color: #4A4A4A;
+  font-family: "Lora-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: 1%;
+}
+
+.guia-ayurveda {
+  margin-top: 5rem;
+}
+
+.menu-link__modifier {
+  color: #000;
+}
+
+.astrologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.astrologias-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5rem;
+}
+.astrologias-title {
+  width: 100%;
+}
+.astrologias-description {
+  margin: 5rem 0 5rem 0;
+  padding: 0;
+}
+
+.d-humano {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.d-humano__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5rem;
+}
+.d-humano__title {
+  width: 100%;
+}
+.tzolkin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.tzolkin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tzolkin-title {
+  margin-top: 5rem;
+}
+
+.sesiones-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sesiones-description {
+  padding: 0 10rem;
+}
+
+.diseno-impulso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.diseno-impulso__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.diseno-impulso__title {
+  width: 100%;
+}
+.diseno-impulso__description {
+  padding: 0 10rem;
+}
+
+.diseno-impulso__articles {
+  display: flex;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+}
+.diseno-impulso__articles .diseno, .diseno-impulso__articles .impulso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 clamp(500px, 30%, 600px);
+}
+.diseno-impulso__articles .impulso {
+  flex: 1 1 clamp(500px, 30%, 600px);
+}
+
+.informes {
+  display: flex;
+  align-items: center;
+  margin-top: 15rem;
+}
+.informes-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.informes-description {
+  padding: 0 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
